@@ -5,30 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora I.M.C</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="imc.js"></script>
 </head>
 <body>
+
     <Div>
         <h1>Calculadora I.M.C</h1>
         <br><br>
         <form action="imc">
-            nome : <input id="nome" type="text"><br><br>
-             peso : <input id="peso" type="text" placeholder="Quilos">
+            Nome : <input id="nome" type="text" placeholder="Seu Nome"><br><br>
+             Peso : <input id="peso" type="number" placeholder="Quilos">
             <br><br>
-            altura : <input id ="altura" type="text">
+            Altura : <input id ="altura" type="number" placeholder="Altura em metros">
             <br><br>
             
              </form>
 
         <button onclick="calcular()">calcular</button>
     </Div>
-    <div>
+    <div id="resultado">
 <h3>Resultado IMC</h3>
     </div>
-    <script>
-function calcular(){
-    alert('olá')
-}
-    </script>
+   
 </body>
 </html>
